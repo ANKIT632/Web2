@@ -1,0 +1,126 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #252529;
+    margin:0;   /* all text touch from touch  */
+    color: #fff;
+    line-height: 1.6;
+   
+    
+}
+
+ a{
+    text-decoration: none;    /* remove line from anchor tag */
+  color: #ccc;
+
+ }
+
+ #showcase{
+      margin: 0;
+      padding: 0;
+      background:url('javier-martinez-hUD0PUczwJQ-unsplash.jpg') no-repeat center/cover;
+      width: 100%;
+      height: 100%;
+      /* height:100vh  means take full screen of image */
+      position: relative;
+      overflow-y:hidden ; /* hide overflow image space jo side m bcha hai y axis mae */
+ }
+
+
+ #showcase.container{
+    margin-top: 25 vh;
+
+ }
+    
+ #showcase h1{
+    font-size:4rem;
+    margin-bottom: 0;
+
+ }
+
+ #showcase h2{
+    font-size:2rem;
+    margin-bottom: 0;
+
+ }
+
+ nav{
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: rbg(51,34,34);
+    position: fixed;  /* scroll karne k baad bhi nav bar fixed rhega */
+ }
+
+ nav ul{
+    /* remove space from ul jaa use kiya hai */
+    padding:0;
+    margin: 0;
+ }
+
+ nav li{
+    /* all li show in single line on nav bar space */
+    display: inline;
+    /* float left  put all sequencely left side */
+    float: left;
+ }
+
+ nav a{
+    /* har eak nav barr ko block d dega */
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    /* decoration mean jo bydeafult lga hai browser ki vjah s ya , kud lgaya hai vo remove ho jayega*/
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+
+ }
+
+ nav li:hover{
+    /* hover mean cursor ko nav p show krne per box jasa show hoga */
+    background-color: rgb(3, 3, 3);
+ }
+
+.container{
+    max-width: 1100px;
+    text-align: center;
+    /* 0 for top and bottom & auto for left ,rigth space equal size */
+    margin:0 auto ;
+    padding: 0 3rem;
+
+}
+
+.lead{
+    font-size: 1.3rem;
+}
+
+/* footer k class footer-cols */
+footer .footer-cols{
+    display: grid;
+    grid-gap: 20px;
+    /* grid ko 4 col m divde kro  1fr k size m*/
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 15px;
+}
+/* NOTE : class s phle space dena hai */
+/* footer k under class footer-cols k undder ul ko style dena hai */
+footer .footer-cols ul{
+/* remove bluet mark*/
+    list-style-type:none;
+}
+/* first means har ul k under first li , first child hoga */
+footer .footer-cols ul li:first-child{
+
+font-size: 1.2rem;
+padding-bottom: 0.5rem;
+border-bottom: #444 solid 2px;
+margin-bottom: 1rem;
+}
+
+footer .footer-bottom{
+     background-color: #333;
+     padding: 1rem;
+     text-align: center;
+}
